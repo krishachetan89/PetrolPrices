@@ -32,7 +32,7 @@ for item in itemlist[:-5]:
 	result.append(item.split("\n"))
 # Calling DataFrame constructor on list
 df = pd.DataFrame(result[:-8])
-df.to_excel("sachin.xlsx")
+df.to_excel("Petrol.xlsx")
 print(df)
 
 

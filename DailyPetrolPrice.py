@@ -4,8 +4,6 @@ import pandas as pd
 from bs4 import BeautifulSoup
 
 # link for extract html data
-
-
 def getdata(url):
 	r = requests.get(url)
 	return r.text
@@ -24,7 +22,7 @@ result = []
 for table in soup.find_all('tr'):
 	mydatastr += table.get_text()
 
-# set accourding to your required
+# set as required
 mydatastr = mydatastr[1:]
 itemlist = mydatastr.split("\n\n")
 
